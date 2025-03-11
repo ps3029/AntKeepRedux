@@ -2,7 +2,7 @@
 	name = "Bogatyr"
 	tutorial = "You come from the land of the Zimicjugites, the land of salt-wedge estuaries and vast steppes. Of bogatyrs, cossacks and glazniki. Scorned knight-errants and serfs escape the tyranny of their landlords, with secret police and bounty hunters hot on their tails. Perhaps a spear-milita or defector in search of greener pastures. Or an opportunistic glazniki willing to lease your skills of tracking to the highest bidder."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/mercenary/steppesman
 	category_tags = list(CTAG_MERCENARY)
 	maximum_possible_slots = 6

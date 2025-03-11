@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 5
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	tutorial = "Somewhere in your lyfe, you fell to the wrong side of civilization. Hounded by the consequences of your actions, you now threaten the peace of those who still heed the authority that condemned you."
 	outfit = null
 	outfit_female = null
@@ -40,7 +40,7 @@
 	name = "Deserter"
 	tutorial = "You were once a venerated and revered knight - now, a traitor who abandoned your liege. You live the life of an outlaw, shunned and looked down upon by society."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/wretch/deserter
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_HEAVYARMOR, TRAIT_OUTLAW)
@@ -111,7 +111,7 @@
 	name = "Outlaw"
 	tutorial = "You're a seasoned criminal known for your heinous acts, your face plastered on wanted posters across the region. A life of theft, robbery, and ill-gotten-gains comes naturally to you."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/wretch/outlaw
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT, TRAIT_OUTLAW)
@@ -178,7 +178,7 @@
 	name = "Poacher"
 	tutorial = "You have rejected society and its laws, choosing life in the wilderness instead. Simple thieving highwayman or freedom fighter, you take from those who have and give to the have-nots. Fancy, how the latter includes yourself!"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/wretch/poacher
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_DODGEEXPERT, TRAIT_OUTLAW, TRAIT_WOODSMAN, TRAIT_OUTDOORSMAN)
@@ -250,7 +250,7 @@
 	name = "Heretic"
 	tutorial = "You are a heretic, spurned by the church, cast out from society - frowned upon by Psydon and his children for your faith."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/wretch/heretic
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_HEAVYARMOR, TRAIT_RITUALIST)
@@ -321,7 +321,7 @@
 	name = "Necromancer"
 	tutorial = "You have been ostracized and hunted by society for your dark magics and perversion of life."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/wretch/necromancer
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_ZOMBIE_IMMUNE, TRAIT_MAGEARMOR, TRAIT_GRAVEROBBER)

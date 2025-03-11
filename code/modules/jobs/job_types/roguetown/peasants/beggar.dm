@@ -6,7 +6,7 @@
 	total_positions = 0
 	spawn_positions = 0
 
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	allowed_ages = ALL_AGES_LIST
 	outfit = /datum/outfit/job/roguetown/vagrant
 	bypass_lastclass = TRUE

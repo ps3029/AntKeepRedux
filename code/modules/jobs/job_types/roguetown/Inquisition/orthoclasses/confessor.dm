@@ -2,7 +2,7 @@
 	name = "Confessor"
 	tutorial = "Confessors are assistant investigators to the Inquisitor. They are sneaky, quick, and prone to skullduggery. They are ideal listeners and watchers from the dark."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/confessor
 	category_tags = list(CTAG_INQUISITION)
 	cmode_music = 'sound/music/combat_rogue.ogg'

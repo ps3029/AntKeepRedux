@@ -6,7 +6,7 @@
 	total_positions = 2
 	spawn_positions = 2
 
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	allowed_ages = list(AGE_ADULT)
 
 	tutorial = "Long hours and back-breaking work wouldn't even describe a quarter of what you do in a day for your Master. Its exhausting, filthy, and you have precious little free time; but someday you'll get your own smithy, and you'll have TWICE as many apprentices as your master does."

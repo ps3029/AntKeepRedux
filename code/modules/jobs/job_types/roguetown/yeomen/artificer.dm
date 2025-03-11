@@ -6,7 +6,7 @@
 	total_positions = 3
 	spawn_positions = 2
 
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	allowed_sexes = list(MALE, FEMALE)
 
 	tutorial = "Hidden in the depths are ancient mechanical secrets, something your creed has taken it upon themselves to studying and understanding. To some these mechanical wonders may seem like magic, but you know their inner workings as well as you do stone, down to the last cog."

@@ -4,7 +4,7 @@ GLOBAL_VAR_INIT(herald_spawned, FALSE)
 	name = "Herald"
 	tutorial = "As a Herald, you are a messenger and storyteller. Use your voice to spread news, warnings, and tales across the land. Your announcements can reach all ears, but use this power wisely."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/adventurer/herald
 	category_tags = list(CTAG_TOWNER)
 	traits_applied = list(TRAIT_KEENEARS)

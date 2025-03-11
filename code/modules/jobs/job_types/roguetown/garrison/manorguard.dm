@@ -7,7 +7,7 @@
 	spawn_positions = 8
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the town and enforce its laws. Trained regularly in combat and siege warfare, you stand a small chance of surviving the Duke's reign."
 	display_order = JDO_CASTLEGUARD

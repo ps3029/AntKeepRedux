@@ -4,7 +4,7 @@
 	var/outfit
 	var/tutorial = "Choose me!"
 	var/list/allowed_sexes
-	var/list/allowed_races = RACES_ALL_KINDS
+	var/list/allowed_races = ALL_RACES_TYPES
 	var/list/allowed_patrons
 	var/list/allowed_ages
 	var/pickprob = 100

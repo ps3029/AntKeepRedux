@@ -5,7 +5,7 @@
 	department_flag = MERCENARIES
 	tutorial = "A common sellsword that does not fit in with the other common mercenary types, commonly being domestic mercenaries or those further afield. Their lack of battlefield experience and poverty makes them less suited for the job compared to the professional Grenzers or battle-hardened Bogatyr."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDSPLUS
+	allowed_races = ALL_RACES_TYPESPLUS
 	outfit = /datum/outfit/job/roguetown/mercenary/sellsword
 	display_order = JDO_SELLSWORD
 	selection_color = JCOLOR_MERCENARY
@@ -40,7 +40,7 @@
 /datum/advclass/longsword
 	name = "Swordsman"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDSPLUS
+	allowed_races = ALL_RACES_TYPESPLUS
 	outfit = /datum/outfit/job/roguetown/mercenary/sellsword/longsword
 	tutorial = "You are well versed in the ways of the longsword.\
 	You have a steel sword and a leather helmet."
@@ -49,7 +49,7 @@
 /datum/advclass/rapier
 	name = "Fencer"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDSPLUS
+	allowed_races = ALL_RACES_TYPESPLUS
 	outfit = /datum/outfit/job/roguetown/mercenary/sellsword/rapier
 	tutorial = "You are well versed in the ways of the rapier.\
 	You have a rapier and a tricorn."
@@ -58,7 +58,7 @@
 /datum/advclass/cutlass
 	name = "Cutthroat"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDSPLUS
+	allowed_races = ALL_RACES_TYPESPLUS
 	outfit = /datum/outfit/job/roguetown/mercenary/sellsword/cutlass
 	tutorial = "You are well versed in the ways of the Cutlass.\
 	You have a cutlass and a maritime outfit."

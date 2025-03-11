@@ -95,14 +95,14 @@
 					/obj/item/rogueweapon/sword/long/rider,
 				)
 
-
+/*
 /datum/supply_pack/rogue/weapons/beardedaxe
 	name = "Bearded Axe"
 	cost = 80
 	contains = list(
 					/obj/item/rogueweapon/stoneaxe/woodcut/steel/atgervi,
 	)
-
+*/
 /datum/supply_pack/rogue/weapons/naledistaff
 	name = "Naledi Warstaff"
 	cost = 80

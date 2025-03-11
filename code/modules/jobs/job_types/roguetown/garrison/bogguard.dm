@@ -7,7 +7,7 @@
 	spawn_positions = 4
 	selection_color = JCOLOR_SOLDIER
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	tutorial = "Typically a denizen of the sparsely populated Azure woods, you volunteered up with the wardens--a group of ranger types who keep a vigil over the untamed wilds."
 	display_order = JDO_TOWNGUARD

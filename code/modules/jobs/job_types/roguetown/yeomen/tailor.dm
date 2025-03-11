@@ -8,7 +8,7 @@
 	display_order = 6
 	min_pq = 0
 	selection_color = JCOLOR_YEOMAN
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	display_order = JDO_TAILOR
 	outfit = /datum/outfit/job/roguetown/tailor
 	give_bank_account = 16

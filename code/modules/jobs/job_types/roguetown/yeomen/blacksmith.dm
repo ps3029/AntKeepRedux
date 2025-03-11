@@ -6,7 +6,7 @@
 	total_positions = 0
 	spawn_positions = 0
 
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 
 	tutorial = "You studied for many decades under your master with a few other apprentices to become an Armorer--a trade that certainly has seen a boom in recent times, with many a bannerlord keenly aware of the importance in maintaining a well-equipped army."
 
@@ -70,7 +70,7 @@
 	total_positions = 0
 	spawn_positions = 0
 
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 
 	tutorial = "You studied for many decades under your master with a few other apprentices to become a Weaponsmith, a trade that is as ancient as the secrets of steel itself! You've repaired the blades of cooks, the cracked hoes of peasants and greased the spears of many soldiers into war."
 
@@ -133,7 +133,7 @@
 	total_positions = 2
 	spawn_positions = 2
 
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 
 	tutorial = "You've studied for many decades under quite a number of master smiths. Whether it's cookware or tools of war, you're unmatched at the art of bending metal to your will."
 

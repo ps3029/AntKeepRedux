@@ -2,7 +2,7 @@
 	name = "Adjudicator"
 	tutorial = "You are the strong arm of the Inquisition. You serve as a Templar under the local Inquisitor to forward the goals of the Otavan Inquisition. PSYDON Endures."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/psydoniantemplar
 	category_tags = list(CTAG_INQUISITION)
 	cmode_music = 'sound/music/templarofpsydonia.ogg'

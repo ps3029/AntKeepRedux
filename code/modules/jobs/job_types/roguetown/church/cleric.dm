@@ -3,7 +3,7 @@
 	name = "Cleric"
 	tutorial = "Disciples of the divine - clerics are blessed with the power of miracles from the gods themselves."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	traits_applied = list(TRAIT_OUTLANDER)
 	vampcompat = FALSE
 	outfit = /datum/outfit/job/roguetown/adventurer/cleric

@@ -509,6 +509,7 @@
 	craftdiff = 5
 	sellprice = 24
 
+/*
 /datum/crafting_recipe/roguetown/leather/openrobes
 	name = "open robe"
 	result = list(/obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi)
@@ -518,5 +519,5 @@
 	tools = list(/obj/item/needle)
 	craftdiff = 5
 	sellprice = 20
-	
+*/
 	

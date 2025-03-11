@@ -3,7 +3,7 @@
 	tutorial = "A levée en masse soldier from the eastern diarchy. There once was a time where you fought for your life and the continuation of your kingdom against the southern heathens.\
 	Now as the threat has withered and the empire can no longer sustain its massive conscript army, it's time for you to venture forth into that very frontier in search of greener pastures. There's nothing for you to go home back to anymore."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	allowed_patrons = ALL_DIVINE_PATRONS_EXTENDED
 	outfit = /datum/outfit/job/roguetown/mercenary/grenzelhoft
 	category_tags = list(CTAG_MERCENARY)

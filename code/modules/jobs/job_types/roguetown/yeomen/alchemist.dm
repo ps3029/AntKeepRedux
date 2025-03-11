@@ -6,7 +6,7 @@
 	total_positions = 0
 	spawn_positions = 0
 
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 
 	tutorial = "You came to Azure Peak after hearing that there is a lack of potion-makers outside of the nobility. Stir up potions with your alchemy expertise--whether of health or death."
 

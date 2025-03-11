@@ -19,7 +19,8 @@
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/kobold,\
-	/datum/species/goblinp\)
+	/datum/species/goblinp\
+)
 
 #define RACES_RESPECTED list(\
 	/datum/species/human/northern,\
@@ -30,9 +31,10 @@
 	/datum/species/lupian,\
 	/datum/species/vulpkanin,\
 	/datum/species/moth,\
-	/datum/species/dracon)
+	/datum/species/dracon\
+)
 
-#define RACES_TOLERATED \
+#define RACES_TOLERATED list(\
 	/datum/species/elf/dark,\
 	/datum/species/tieberian,\
 	/datum/species/lizardfolk,\
@@ -40,11 +42,13 @@
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman\
+)
 
-#define RACES_SHUNNED \
+#define RACES_SHUNNED list(\
 	/datum/species/halforc,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/kobold\
+)
 
 #define RACES_DESPISED \
 	/datum/species/goblinp\
@@ -74,7 +78,8 @@
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/kobold,\
-	/datum/species/goblinp\)
+	/datum/species/goblinp\
+)
 
 #define CLOTHED_RACES_TYPES list(\
 	/datum/species/human/northern,\

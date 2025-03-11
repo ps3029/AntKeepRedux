@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 2 // TWO GOONS!!
 	spawn_positions = 2
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	allowed_patrons = list(/datum/patron/psydon_heresy/pietas) //You MUST have a Psydonite character to start. Just so people don't get japed into Oops Suddenly Psydon!
 	tutorial = "A fervent believer in the cause of the Inquisition. Recruited by the Otavan Inquisitor to further the Psydonian goal in the locale."
 	selection_color = JCOLOR_INQUISITION
