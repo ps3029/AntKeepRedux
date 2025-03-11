@@ -257,9 +257,9 @@
 
 
 /datum/outfit/job/roguetown/wretch/heretic/pre_equip(mob/living/carbon/human/H)
-	if (!(istype(H.patron, /datum/patron/inhumen/zizo) || istype(H.patron, /datum/patron/inhumen/matthios)))
+	if (!(istype(H.patron, /datum/patron/heathenry/zizo) || istype(H.patron, /datum/patron/heathenry/pagans)))
 		to_chat(H, span_warning("My former deity frowned upon my practices. I have since turned to a new god."))
-		H.set_patron(pick(/datum/patron/inhumen/zizo, /datum/patron/inhumen/matthios))
+		H.set_patron(pick(/datum/patron/heathenry/zizo), /datum/patron/heathenry/pagans)
 	H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
@@ -287,7 +287,7 @@
 	H.change_stat("strength", 2)
 	H.change_stat("constitution", 2)
 	H.change_stat("endurance", 1)
-	if (istype (H.patron, /datum/patron/inhumen/zizo))
+	if (istype (H.patron, /datum/patron/heathenry/zizo))
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order)
 		ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
@@ -328,7 +328,7 @@
 
 
 /datum/outfit/job/roguetown/wretch/necromancer/pre_equip(mob/living/carbon/human/H)
-	H.set_patron(/datum/patron/inhumen/zizo)
+	H.set_patron(/datum/patron/heathenry/zizo)
 	head = /obj/item/clothing/head/roguetown/roguehood/black
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants

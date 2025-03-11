@@ -72,6 +72,6 @@
 				armor = /obj/item/clothing/suit/roguetown/shirt/robe/wizard
 				H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
 		switch(H.patron?.type)
-			if(/datum/patron/inhumen/zizo)
+			if(/datum/patron/heathenry/zizo)
 				H.cmode_music = 'sound/music/combat_cult.ogg'
 				backpack_contents += list(/obj/item/roguekey/inhumen = 1)

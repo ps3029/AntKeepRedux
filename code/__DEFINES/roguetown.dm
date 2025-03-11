@@ -19,10 +19,9 @@
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/kobold,\
-	/datum/species/goblinp,\
-)
+	/datum/species/goblinp\)
 
-#define RACES_RESPECTED \
+#define RACES_RESPECTED list(\
 	/datum/species/human/northern,\
 	/datum/species/elf/wood,\
 	/datum/species/human/halfelf,\
@@ -31,7 +30,7 @@
 	/datum/species/lupian,\
 	/datum/species/vulpkanin,\
 	/datum/species/moth,\
-	/datum/species/dracon,
+	/datum/species/dracon)
 
 #define RACES_TOLERATED \
 	/datum/species/elf/dark,\
@@ -40,15 +39,15 @@
 	/datum/species/tabaxi,\
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
-	/datum/species/demihuman
+	/datum/species/demihuman\
 
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
 	/datum/species/anthromorphsmall,\
-	/datum/species/kobold
+	/datum/species/kobold\
 
 #define RACES_DESPISED \
-	/datum/species/goblinp,\
+	/datum/species/goblinp\
 
 #define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
 
@@ -75,8 +74,7 @@
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/kobold,\
-	/datum/species/goblinp,\
-)
+	/datum/species/goblinp\)
 
 #define CLOTHED_RACES_TYPES list(\
 	/datum/species/human/northern,\
@@ -98,8 +96,9 @@
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/kobold,\
-	/datum/species/goblinp,\
+	/datum/species/goblinp\
 )
+
 // Non-dwarf non-kobold non-goblin mostly
 #define NON_DWARVEN_RACE_TYPES list(\
 	/datum/species/human/northern,\
@@ -117,8 +116,9 @@
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
-	/datum/species/halforc,\
+	/datum/species/halforc\
 )
+
 // Non-elf non-dwarf non-kobold non-goblin mostly
 #define HUMANLIKE_RACE_TYPES list(\
 	/datum/species/human/northern,\
@@ -132,19 +132,51 @@
 	/datum/species/moth,\
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
-	/datum/species/demihuman,\
+	/datum/species/demihuman\
 )
-#define ALL_CLERIC_PATRONS list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/necra, /datum/patron/divine/pestra, /datum/patron/divine/ravox, /datum/patron/divine/malum, /datum/patron/divine/eora)
 
-#define ALL_PALADIN_PATRONS list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/abyssor, /datum/patron/divine/dendor, /datum/patron/divine/necra, /datum/patron/divine/pestra, /datum/patron/divine/ravox, /datum/patron/divine/malum, /datum/patron/divine/eora, /datum/patron/old_god)
+#define ALL_PATRONS list(ALL_DIVINE_PATRONS_EXTENDED, ALL_INHUMEN_PATRONS)
 
-#define ALL_ACOLYTE_PATRONS list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/pestra, /datum/patron/divine/eora, /datum/patron/divine/necra, /datum/patron/divine/abyssor, /datum/patron/divine/malum)
+#define ALL_DIVINE_PATRONS list(\
+	/datum/patron/sects_psydonistismianism/psydon,\
+	/datum/patron/sects_psydonistismianism/psydon_east,\
+	/datum/patron/sects_psydonistismianism/conciliarism,\
+	/datum/patron/sects_psydonistismianism/sovereign,\
+	/datum/patron/sects_psydonistismianism/sectarian\
+)
 
-#define ALL_DIVINE_PATRONS list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/ravox, /datum/patron/divine/necra, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora)
 
-#define ALL_INHUMEN_PATRONS list(/datum/patron/inhumen/zizo, /datum/patron/inhumen/graggar, /datum/patron/inhumen/matthios, /datum/patron/inhumen/baotha)
+#define ZIZO_ONLY list(/datum/patron/heathenry/zizo,)
 
-#define ALL_PATRONS  list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/ravox, /datum/patron/divine/necra, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora, /datum/patron/old_god, /datum/patron/inhumen/zizo, /datum/patron/inhumen/graggar, /datum/patron/inhumen/matthios, /datum/patron/inhumen/baotha)
+#define ALL_DIVINE_PATRONS_EXTENDED list(\
+	/datum/patron/sects_psydonistismianism/psydon,\
+	/datum/patron/sects_psydonistismianism/psydon_east,\
+	/datum/patron/sects_psydonistismianism/conciliarism,\
+	/datum/patron/sects_psydonistismianism/sovereign,\
+	/datum/patron/sects_psydonistismianism/sectarian,\
+	/datum/patron/psydon_heresy/iconolatrists,\
+	/datum/patron/psydon_heresy/fredonian,\
+	/datum/patron/psydon_heresy/pietas,\
+	/datum/patron/psydon_heresy/simonism\
+)
+
+#define ALL_INHUMEN_PATRONS list(\
+	/datum/patron/heathenry/zizo,\
+	/datum/patron/heathenry/atheist,\
+	/datum/patron/heathenry/pagans\
+)
+
+#define TEN_CURSES list(\
+	/datum/curse/psydon,\
+	/datum/curse/psydon_east,\
+	/datum/curse/sectarian,\
+	/datum/curse/sovereign,\
+	/datum/curse/conciliarism,\
+	/datum/curse/pietas,\
+	/datum/curse/simonism,\
+	/datum/curse/fredonian\
+)
+
 
 #define PLATEHIT "plate"
 #define CHAINHIT "chain"

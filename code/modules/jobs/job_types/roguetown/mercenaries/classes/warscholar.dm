@@ -10,7 +10,7 @@
 
 /datum/outfit/job/roguetown/mercenary/warscholar
 	var/detailcolor
-	allowed_patrons = list(/datum/patron/old_god)
+	allowed_patrons = list(/datum/patron/sects_psydonistismianism/psydon)
 
 /datum/outfit/job/roguetown/mercenary/warscholar/pre_equip(mob/living/carbon/human/H)
 	..()

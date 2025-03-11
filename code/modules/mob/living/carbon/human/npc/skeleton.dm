@@ -146,7 +146,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 
-	H.set_patron(/datum/patron/inhumen/zizo)
+	H.set_patron(/datum/patron/heathenry/zizo)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 
 	H.possible_rmb_intents = list(/datum/rmb_intent/feint,\

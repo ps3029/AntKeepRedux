@@ -22,7 +22,7 @@
 	var/solarrites = list("Guiding Light") // This is important - This is the var which stores every ritual option available to a ritualist - Ideally, we'd have like, 3 for each God. Right now, just 1.
 
 /obj/structure/ritualcircle/astrata/attack_hand(mob/living/user) 
-	if((user.patron?.type) != /datum/patron/divine/astrata)
+	if((user.patron?.type) != /datum/patron/sects_psydonistismianism/psydon)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -69,7 +69,7 @@
 	var/lunarrites = list("Moonlight Dance") // list for more to be added later
 
 /obj/structure/ritualcircle/noc/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/divine/noc)
+	if((user.patron?.type) != /datum/patron/sects_psydonistismianism/psydon_east)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -113,7 +113,7 @@
 
 
 /obj/structure/ritualcircle/pestra/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/divine/pestra)
+	if((user.patron?.type) != /datum/patron/sects_psydonistismianism/conciliarism)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -161,7 +161,7 @@
 	var/bestialrites = list("Rite of the Lesser Wolf")
 
 /obj/structure/ritualcircle/dendor/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/divine/dendor)
+	if((user.patron?.type) != /datum/patron/sects_psydonistismianism/sovereign)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -212,7 +212,7 @@
 	var/deathrites = list("Undermaiden's Bargain")
 
 /obj/structure/ritualcircle/necra/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/divine/necra)
+	if((user.patron?.type) != /datum/patron/sects_psydonistismianism/sectarian)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -248,40 +248,6 @@
 	for(var/mob/living/carbon/human/target in ritualtargets)
 		target.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)
 	
-
-/obj/structure/ritualcircle/eora
-	name = "Rune of Love"
-	desc = "A Holy Rune of Eora"
-	icon_state = "eora_chalky"
-
-	var/peacerites = list("Rite of Pacification")
-
-/obj/structure/ritualcircle/eora/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/divine/eora)
-		to_chat(user,span_smallred("I don't know the proper rites for this..."))
-		return
-	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
-		to_chat(user,span_smallred("I don't know the proper rites for this..."))
-		return
-	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
-		to_chat(user,span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
-		return
-	var/riteselection = input(user, "Rituals of Love", src) as null|anything in peacerites
-	switch(riteselection) // put ur rite selection here
-		if("Rite of Pacification")
-			if(do_after(user, 50))
-				user.say("#Blessed be your weary head...")
-				if(do_after(user, 50))
-					user.say("#Full of strife and pain...")
-					if(do_after(user, 50))
-						user.say("#Let Her ease your fear...")
-						if(do_after(user, 50))
-							icon_state = "eora_active"
-							pacify(src)
-							user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
-							spawn(120)
-								icon_state = "eora_chalky"
-
 /obj/structure/ritualcircle/eora/proc/pacify(src)
 	var/ritualtargets = view(0, loc)
 	for(var/mob/living/carbon/human/target in ritualtargets)
@@ -299,7 +265,7 @@
 	var/zizorites = list("Rite of Armaments")
 
 /obj/structure/ritualcircle/zizo/attack_hand(mob/living/user)
-	if((user.patron?.type) != /datum/patron/inhumen/zizo)
+	if((user.patron?.type) != /datum/patron/heathenry/zizo)
 		to_chat(user,span_smallred("I don't know the proper rites for this..."))
 		return
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))

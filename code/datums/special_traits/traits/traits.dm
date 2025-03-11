@@ -195,8 +195,8 @@
 /datum/special_trait/psydons_rider
 	name = "Psydon's Drunkest Rider"
 	greet_text = span_notice("I ride! None of the laws shall stop me for that is Psydon's divine will!")
-	req_text = "Worship Psydon"
-	allowed_patrons = list(/datum/patron/old_god)
+	req_text = "Worship Psydon in a way only a Fredonian could!"
+	allowed_patrons = list(/datum/patron/psydon_heresy/fredonian)
 	weight = 100
 
 /datum/special_trait/psydons_rider/on_apply(mob/living/carbon/human/character, silent)
@@ -313,9 +313,9 @@
 
 /datum/special_trait/lucky
 	name = "Fortune's Grace"
-	greet_text = span_notice("Xylix favor me, I am extremely lucky.")
-	req_text = "Have Xylix as your Patron"
-	allowed_patrons = list(/datum/patron/divine/xylix)
+	greet_text = span_notice("Psydon favor me, I am extremely lucky.")
+	req_text = "Be a Sectarian"
+	allowed_patrons = list(/datum/patron/sects_psydonistismianism/sectarian)
 	weight = 7
 
 /datum/special_trait/lucky/on_apply(mob/living/carbon/human/character, silent)
@@ -345,7 +345,7 @@
 	weight = 100
 
 /datum/special_trait/atheism/on_apply(mob/living/carbon/human/character, silent)
-	character.set_patron(/datum/patron/godless)
+	character.set_patron(/datum/patron/heathenry/atheist)
 
 //negative
 /datum/special_trait/nimrod

@@ -25,10 +25,10 @@
 	var/BUFLUC = 0
 	var/statbuf = FALSE
 	var/list/statindex = list()
-	var/datum/patron/patron = /datum/patron/godless
-
+	var/datum/patron/patron = /datum/patron/heathenry/atheist
+ 
 /mob/living/proc/init_faith()
-	set_patron(/datum/patron/godless)
+	set_patron(/datum/patron/heathenry/atheist)
 
 /mob/living/proc/set_patron(datum/patron/new_patron)
 	if(!new_patron)

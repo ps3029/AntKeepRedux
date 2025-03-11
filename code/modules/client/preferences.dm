@@ -89,7 +89,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/datum/species/pref_species = new /datum/species/human/northern()	//Mutant race
 	var/static/datum/species/default_species = new /datum/species/human/northern()
 	var/datum/patron/selected_patron
-	var/static/datum/patron/default_patron = /datum/patron/divine/astrata
+	var/static/datum/patron/default_patron = /datum/patron/sects_psydonistismianism/psydon
 	var/list/features = MANDATORY_FEATURE_LIST
 	var/list/randomise = list(RANDOM_UNDERWEAR = TRUE, RANDOM_UNDERWEAR_COLOR = TRUE, RANDOM_UNDERSHIRT = TRUE, RANDOM_SOCKS = TRUE, RANDOM_BACKPACK = TRUE, RANDOM_JUMPSUIT_STYLE = FALSE, RANDOM_SKIN_TONE = TRUE, RANDOM_EYE_COLOR = TRUE)
 	var/list/friendlyGenders = list("male" = "masculine", "female" = "feminine")
@@ -1760,6 +1760,8 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 				if("update_mutant_colors")
 					update_mutant_colors = !update_mutant_colors
 
+
+
 				if("virtue")
 					var/list/virtue_choices = list()
 					for (var/path as anything in GLOB.virtues)
@@ -1768,7 +1770,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 							continue
 						if (V.name == virtue.name || V.name == virtuetwo.name)
 							continue
-						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/inhumen))
+						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/heathenry))
 							continue
 						virtue_choices[V.name] = V
 					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
@@ -1787,10 +1789,11 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 							continue
 						if (V.name == virtue.name || V.name == virtuetwo.name)
 							continue
-						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/inhumen))
+						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/heathenry))
 							continue
 						virtue_choices[V.name] = V
 					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
+
 
 					if (result)
 						var/datum/virtue/virtue_chosen = virtue_choices[result]
