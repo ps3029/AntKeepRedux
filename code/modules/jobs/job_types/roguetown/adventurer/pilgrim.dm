@@ -6,7 +6,7 @@
 	total_positions = 0
 	spawn_positions = 0 //disables round-start spawn of pilgrims but allows migrant waves
 	allowed_races = ALL_RACES_TYPES
-	tutorial = "Fleeing misfortune you head your way towards Azure Peak, you're not a soldier or an explorer, but a humble migrant trying to look for a better life, if you get to survive the trip that is."
+	tutorial = "Fleeing misfortune you head your way towards the Duchy of Kazan, you're not a soldier or an explorer, but a humble migrant trying to look for a better life, if you get to survive the trip that is."
 
 	outfit = null
 	outfit_female = null
