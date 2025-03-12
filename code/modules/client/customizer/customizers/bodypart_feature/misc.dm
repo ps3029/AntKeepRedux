@@ -54,7 +54,7 @@
 /datum/customizer_choice/bodypart_feature/underwear
 	name = "Underwear"
 	feature_type = /datum/bodypart_feature/underwear
-	default_accessory = /datum/sprite_accessory/underwear/athletic_leotard
+	default_accessory = /datum/sprite_accessory/underwear/briefs
 	sprite_accessories = list(
 		/datum/sprite_accessory/underwear/briefs,
 		/datum/sprite_accessory/underwear/panties,

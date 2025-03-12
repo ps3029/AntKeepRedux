@@ -133,3 +133,10 @@
 	"...the perched archers ruthlessly repel the peasant rebellion. Hope for fairness is almost forlorn, until with a soft crack, a hailing of iron bullets clatter against the foe's helmets...",
 	"...your arm tires from the toils of practice. Swinging rapidly has left your arm numb. With weary eyes, you glance aside to witness a hunter practice their craft with a brief overhand toss. Absorbing the technique, you mimic it, and effortlessly cast a powerful stone square onto the target..."
 	)
+
+/datum/skill/combat/firearms
+	name = "Firearms"
+	dreams = list(
+		"...The pungent smell of sulfur and burnt twine hangs in the air, signalling the battle's end before it has even commenced. This is no weapon for civilised men...",
+		"...A dealer in gunpowder and death. They said the gun could not accomplish anything on the battlefield. Now they say nothing."
+	)

@@ -4,7 +4,6 @@
 	Now as the threat has withered and the empire can no longer sustain its massive conscript army, it's time for you to venture forth into that very frontier in search of greener pastures. There's nothing for you to go home back to anymore."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = ALL_RACES_TYPES
-	allowed_patrons = ALL_DIVINE_PATRONS_EXTENDED
 	outfit = /datum/outfit/job/roguetown/mercenary/grenzelhoft
 	category_tags = list(CTAG_MERCENARY)
 	maximum_possible_slots = 6
@@ -35,9 +34,15 @@
 			H.change_stat("strength", 1)
 			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 2)
-			H.change_stat("perception", 3)
+			H.change_stat("perception", 3) 
 			H.change_stat("speed", 2)
-			//r_hand = /obj/item/gun/ballistic/arquebus
+			r_hand = /obj/item/gun/ballistic/firearm/arquebus
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+			neck = /obj/item/ammo_holder/bullet
+			backl = /obj/item/storage/backpack/rogue/satchel/
+			backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/powderflask, /obj/item/ammo_casing/caseless/rogue/bullet, /obj/item/ammo_casing/caseless/rogue/bullet, /obj/item/ammo_casing/caseless/rogue/bullet)
+			
+			
 
 		if("Landsturm")
 			H.set_blindness(0)
@@ -53,12 +58,15 @@
 			H.change_stat("constitution", 1)
 			H.change_stat("perception", 1)
 			r_hand = /obj/item/rogueweapon/spear/billhook
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+			back = /obj/item/storage/bag
+			backpack_contents = list(/obj/item/roguekey/mercenary)
 
 	//General gear regardless of class.
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/flashlight/flare/torch
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+	
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	shirt = /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
 	head = /obj/item/clothing/head/roguetown/grenzelhofthat
@@ -67,6 +75,6 @@
 	shoes = /obj/item/clothing/shoes/roguetown/grenzelhoft
 	gloves = /obj/item/clothing/gloves/roguetown/grenzelgloves
 
-	backpack_contents = list(/obj/item/roguekey/mercenary)
+	
 
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)

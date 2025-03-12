@@ -1,4 +1,4 @@
-/datum/job/roguetown/skeleton
+/datum/advclass/mercenary/skeleton
 	title = "Undead Mercenary"
 	flag = MERCENARIES
 	department_flag = MERCENARIES

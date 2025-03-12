@@ -19,6 +19,34 @@
 	var/list/arrows = list()
 	sewrepair = TRUE
 
+
+/obj/item/ammo_holder
+	desc = ""
+	icon = 'icons/roguetown/weapons/ammo.dmi'
+	w_class = WEIGHT_CLASS_BULKY
+	resistance_flags = NONE
+	max_integrity = 0
+	equip_sound = 'sound/blank.ogg'
+	bloody_icon_state = "bodyblood"
+	alternate_worn_layer = UNDER_CLOAK_LAYER
+	strip_delay = 20
+	var/max_storage
+	var/list/ammo = list()
+	sewrepair = TRUE
+	var/list/ammo_type
+
+
+/obj/item/ammo_holder/bullet
+	name = "bullet pouch"
+	icon_state = "pouch0"
+	item_state = "pouch"
+	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_NECK
+	max_storage = 10
+	ammo_type = list(/obj/item/ammo_casing) //common denominator type for runelock and arquebus bullets
+
+///obj/item/ammo_holder/bullet/full/Initialize()
+
+
 /obj/item/quiver/attack_turf(turf/T, mob/living/user)
 	if(arrows.len >= max_storage)
 		to_chat(user, span_warning("My [src.name] is full!"))
@@ -114,6 +142,27 @@
 		arrows += A
 	update_icon()
 */
+
+/obj/item/ammo_holder/bullet/runed/Initialize()
+	. = ..()
+	for(var/i in 1 to max_storage)
+		var/obj/item/ammo_casing/caseless/runelock/R = new()
+		ammo += R
+	update_icon()
+
+/obj/item/ammo_holder/bullet/lead/Initialize()
+	. = ..()
+	for(var/i in 1 to max_storage)
+		var/obj/item/ammo_casing/caseless/lead/B = new()
+		ammo += B
+	update_icon()
+
+/obj/item/ammo_holder/bullet/grapeshot/Initialize()
+	. = ..()
+	for(var/i in 1 to max_storage)
+		var/obj/item/ammo_casing/caseless/grapeshot/B = new()
+		ammo += B
+	update_icon()
 
 
 /obj/item/quiver/javelin
