@@ -10,7 +10,7 @@
 	allowed_races = RACES_RESPECTED
 	allowed_patrons = ALL_DIVINE_PATRONS_EXTENDED
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "A local yokel belonging to the town levy. Usually an unpaid old cobber doing his duty for the crown when work and pay is short. Your job is to maintain order within the town using whatever methods you see fit, but be sure not to invoke the King's ire! When duty calls, his authority may extend to the keep and the rural outskirts and boroughs."
+	tutorial = "A local yokel belonging to the town levy. Usually an unpaid old cobber doing his duty for the crown when work and pay is short. Your job is to maintain order within the town using whatever methods you see fit, but be sure not to invoke the Duke's ire! When duty calls, his authority may extend to the keep and the rural outskirts and boroughs."
 	display_order = JDO_TOWNGUARD
 	whitelist_req = FALSE
 
