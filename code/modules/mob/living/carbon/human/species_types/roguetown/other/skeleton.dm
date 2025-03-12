@@ -5,7 +5,7 @@
 	name = "Skeleton"
 	id = "skeleton_playable"
 	desc = "<b>Skeleton</b><br>\
-	boner<br>\
+	Nearly one of the countless, ravenous undead, you were instead gifted the fate of being one of the countless undead that doesn't feel hunger. You may try to lead a facsimile of an ordinary life, or you may embrace the ghoulish nature of your existence. No matter your option, the memories of who you once were fade a little more every day. <br>\
 	(+1 Endurance, +1 Intelligence)"
 
 	skin_tone_wording = "Ancestry"
