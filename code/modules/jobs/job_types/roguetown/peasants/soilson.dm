@@ -10,7 +10,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = ALL_RACES_TYPES
 
-	tutorial = "It is a simple life you live, your basic understanding of life is something many would be envious of if they knew just how perfect it was. You know a good day's work, the sweat on your brow is yours: Famines and plague may take their toll, but you know how to celebrate life well. Till the soil and produce fresh food for those around you, and maybe you'll be more than an unsung hero someday."
+	tutorial = "In the day of your father and your father's father, a peasant's life was not easy, but you were provided for to an extent. But war, civil unrest, and time's eternal march onwards has ended what semblance of a golden age that a peasant of your stature can even have. Till your fields, stick to your labour. Or maybe, today is the day you'll have enough of your masters."
 
 
 	f_title = "Soilbride"
