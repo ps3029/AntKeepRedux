@@ -1346,7 +1346,6 @@
 #include "code\modules\jobs\job_types\roguetown\Inquisition\orthoclasses\psydoniantemplar.dm"
 #include "code\modules\jobs\job_types\roguetown\mercenaries\mercenary.dm"
 #include "code\modules\jobs\job_types\roguetown\mercenaries\classes\grenzelhoft.dm"
-#include "code\modules\jobs\job_types\roguetown\mercenaries\classes\skeleton.dm"
 #include "code\modules\jobs\job_types\roguetown\mercenaries\classes\steppesman.dm"
 #include "code\modules\jobs\job_types\roguetown\nobility\bailiff.dm"
 #include "code\modules\jobs\job_types\roguetown\nobility\captain.dm"

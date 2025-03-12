@@ -29,7 +29,6 @@
 		l_hand = /obj/item/rogueweapon/spear/banner/
 		backl = /obj/item/storage/backpack/rogue/satchel/
 		head = /obj/item/clothing/head/roguetown/helmet/kettle
-		head = /obj/item/clothing/head/roguetown/helmet/kettle
 		armor = /obj/item/clothing/suit/roguetown/armor/cuirass/INITIAL_ROUND_TIMER
 		wrists = /obj/item/clothing/wrists/roguetown/bracers
 		belt = /obj/item/storage/belt/rogue/leather
