@@ -1,20 +1,12 @@
 /datum/advclass/mercenary/skeleton
-	title = "Undead Mercenary"
+	name = "Undead Mercenary"
 	tutorial = "Even in death, you still serve! You retain fragments of your former life, but your memory withers with every waking moment.\
 	You may have lived for eons, you may be freshly revived. However old you are, your connection to your former master has been severed, and you have been cursed to wander the plane of the living in this decrepit, decaying body."
-	flag = MERCENARIES
-	department_flag = MERCENARIES
 	allowed_races = /datum/species/skeleton
 	category_tags = list(CTAG_MERCENARY)
 	outfit = /datum/outfit/job/roguetown/skeleton
-	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
-	min_pq = 10
-	max_pq = null
+	maximum_possible_slots = 6
 	cmode_music = 'sound/music/combat_weird.ogg'
-	show_in_credits = FALSE
-	give_bank_account = FALSE
 
 /datum/outfit/job/roguetown/mercenary/skeleton/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -68,24 +60,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel/
 			backpack_contents = list(/obj/item/roguekey/mercenary)
 
-		if("Spearman")
-			H.set_blindness(0)
-			to_chat(H, span_warning("Ackackackack!"))
-			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)
-			H.mind.adjust_skillrank_up_to(/datum/skill/misc/climbing, 2, TRUE)
-			H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
-			H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 1, TRUE)
-			H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 3, TRUE)
-			H.mind.adjust_skillrank_up_to(/datum/skill/misc/tracking, 1, TRUE) //Hearthstone change.
-			H.change_stat("strength", 2)
-			H.change_stat("endurance", 2)
-			H.change_stat("constitution", 1)
-			H.change_stat("perception", 1)
-			r_hand = /obj/item/rogueweapon/spear/billhook
-			backl = /obj/item/storage/backpack/rogue/satchel/
-			backpack_contents = list(/obj/item/roguekey/mercenary)
-
-			if("Standard Bearer")
+		if("Standard Bearer")
 			H.set_blindness(0)
 			to_chat(H, span_warning("Ackackackack!"))
 			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)

@@ -64,3 +64,13 @@
 	return TRUE
 
 
+/datum/species/skeleton/get_skin_list()
+	return list(
+		"Bleached" = SKIN_COLOUR_BLEACHED,
+		"Aged" = SKIN_COLOUR_AGED,
+		"Burnt" = SKIN_COLOUR_BURNT,
+		"Red" = SKIN_COLOUR_RED,
+		"Charred" = SKIN_COLOUR_CHARRED,
+		"Mossy" = SKIN_COLOUR_MOSSY,
+		"Rosy" = SKIN_COLOUR_ROSY,
+)
