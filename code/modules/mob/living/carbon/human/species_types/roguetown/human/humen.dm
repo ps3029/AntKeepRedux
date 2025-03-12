@@ -52,10 +52,7 @@
 		/datum/customizer/bodypart_feature/accessory,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
-		/datum/customizer/organ/testicles/anthro,
-		/datum/customizer/organ/penis/anthro,
 		/datum/customizer/organ/breasts/human,
-		/datum/customizer/organ/vagina/human_anthro,
 		)
 	body_marking_sets = list(
 		/datum/body_marking_set/none,
@@ -73,7 +70,7 @@
 
 /datum/species/human/northern/check_roundstart_eligible()
 	return TRUE
-	
+
 /datum/species/human/northern/on_species_gain(mob/living/carbon/foreign, datum/species/old_species)
 	..()
 	languages(foreign)
@@ -82,10 +79,14 @@
 	if(foreign.skin_tone == SKIN_COLOR_GRENZELHOFT)
 		foreign.grant_language(/datum/language/grenzelhoftian)
 
+	
+		
+
+
 /datum/species/human/northern/get_skin_list()
 	return list(
-		"Grenzelhoft" = SKIN_COLOR_GRENZELHOFT,
-		"Hammerhold" = SKIN_COLOR_HAMMERHOLD,
+		"Kasan" = SKIN_COLOR_GRENZELHOFT,
+		"Zimicjugite" = SKIN_COLOR_HAMMERHOLD,
 		"Avar" = SKIN_COLOR_AVAR,
 		"Rockhill" = SKIN_COLOR_ROCKHILL,
 		"Otava" = SKIN_COLOR_OTAVA,

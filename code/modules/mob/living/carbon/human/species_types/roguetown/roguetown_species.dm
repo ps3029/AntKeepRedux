@@ -11,7 +11,7 @@
 			return strings("dwarf_replacement.json", type)
 		if("Dark Elf accent")
 			return strings("french_replacement.json", type)
-		if("Elf accent")
+		if("Zimicjugite accent")
 			return strings("russian_replacement.json", type)
 		if("Grenzelhoft accent")
 			return strings("german_replacement.json", type)

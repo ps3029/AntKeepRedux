@@ -20,7 +20,7 @@
 	..()
 
 	H.adjust_blindness(-3)
-	var/classes = list("Gunner","Spearman")
+	var/classes = list("Gunner","Spearman", "Standard Bearer")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -46,6 +46,8 @@
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backr = /obj/item/ammo_holder/bullet
 			backl = /obj/item/storage/backpack/rogue/satchel/
+			shirt = /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
+			head = /obj/item/clothing/head/roguetown/grenzelhofthat
 			backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/powderflask, /obj/item/ammo_casing/caseless/lead, /obj/item/ammo_casing/caseless/lead, /obj/item/ammo_casing/caseless/lead)
 
 		if("Spearman")
@@ -63,12 +65,47 @@
 			H.change_stat("perception", 1)
 			r_hand = /obj/item/rogueweapon/spear/billhook
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
-			back = /obj/item/storage/bag
+			backl = /obj/item/storage/backpack/rogue/satchel/
 			backpack_contents = list(/obj/item/roguekey/mercenary)
 
+		if("Spearman")
+			H.set_blindness(0)
+			to_chat(H, span_warning("Ackackackack!"))
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/climbing, 2, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 1, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/tracking, 1, TRUE) //Hearthstone change.
+			H.change_stat("strength", 2)
+			H.change_stat("endurance", 2)
+			H.change_stat("constitution", 1)
+			H.change_stat("perception", 1)
+			r_hand = /obj/item/rogueweapon/spear/billhook
+			backl = /obj/item/storage/backpack/rogue/satchel/
+			backpack_contents = list(/obj/item/roguekey/mercenary)
 
+			if("Standard Bearer")
+			H.set_blindness(0)
+			to_chat(H, span_warning("Ackackackack!"))
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/climbing, 2, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 1, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/tracking, 1, TRUE) //Hearthstone change.
+			H.change_stat("strength", 2)
+			H.change_stat("endurance", 2)
+			H.change_stat("constitution", 1)
+			H.change_stat("perception", 1)
+			r_hand = /obj/item/signal_horn/
+			l_hand = /obj/item/rogueweapon/spear/banner/
+			backl = /obj/item/storage/backpack/rogue/satchel/
+			head = /obj/item/clothing/head/roguetown/helmet/bascinet
+			armor = /obj/item/clothing/suit/roguetown/armor/cuirass/iron
+			backpack_contents = list(/obj/item/roguekey/mercenary)
 
-
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail
 			wrists = /obj/item/clothing/wrists/roguetown/bracers
 			belt = /obj/item/storage/belt/rogue/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
