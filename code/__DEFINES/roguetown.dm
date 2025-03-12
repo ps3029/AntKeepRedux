@@ -1,5 +1,6 @@
 //used in various places
 #define ALL_RACES_TYPES list(\
+	/datum/species/skeleton,\
 	/datum/species/human/northern,\
 	/datum/species/human/halfelf,\
 	/datum/species/elf/dark,\
@@ -82,6 +83,7 @@
 )
 
 #define CLOTHED_RACES_TYPES list(\
+	/datum/species/skeleton,\
 	/datum/species/human/northern,\
 	/datum/species/human/halfelf,\
 	/datum/species/elf/dark,\

@@ -559,7 +559,7 @@
 	hitsound = 'sound/combat/hits/hi_bolt (2).ogg'
 	embedchance = 100
 	woundclass = BCLASS_STAB
-	flag = "bullet"
+	flag = "piercing"
 
 /**
  * Generic ammo used by handgonnes and arquebuses
@@ -576,7 +576,7 @@
 	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
 	embedchance = 100
 	woundclass = BCLASS_STAB
-	flag = "bullet"
+	flag = "piercing"
 	armor_penetration = 75 
 	speed = 0.1		
 
@@ -591,7 +591,7 @@
 	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
 	embedchance = 100
 	woundclass = BCLASS_STAB
-	flag = "bullet"
+	flag = "piercing"
 	armor_penetration = 75 
 	speed = 0.1		
 

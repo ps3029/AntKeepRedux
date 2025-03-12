@@ -30,17 +30,17 @@
 			H.mind.adjust_skillrank_up_to(/datum/skill/craft/carpentry, 3, TRUE) //builders
 			H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 1, TRUE)
 			H.mind.adjust_skillrank_up_to(/datum/skill/misc/tracking, 3, TRUE) //Hearthstone change.
-			//H.mind.adjust_skillrank_up_to(/datum/skill/combat/firearms, 4, TRUE)
-			H.change_stat("strength", 1)
+			H.mind.adjust_skillrank_up_to(/datum/skill/combat/firearms, 4, TRUE)
+			H.change_stat("strength", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 2)
 			H.change_stat("perception", 3) 
 			H.change_stat("speed", 2)
 			r_hand = /obj/item/gun/ballistic/firearm/arquebus
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
-			neck = /obj/item/ammo_holder/bullet
+			backr = /obj/item/ammo_holder/bullet
 			backl = /obj/item/storage/backpack/rogue/satchel/
-			backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/powderflask, /obj/item/ammo_casing/caseless/rogue/bullet, /obj/item/ammo_casing/caseless/rogue/bullet, /obj/item/ammo_casing/caseless/rogue/bullet)
+			backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/powderflask, /obj/item/ammo_casing/caseless/lead, /obj/item/ammo_casing/caseless/lead, /obj/item/ammo_casing/caseless/lead)
 			
 			
 
@@ -66,7 +66,6 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/flashlight/flare/torch
-	
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	shirt = /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
 	head = /obj/item/clothing/head/roguetown/grenzelhofthat

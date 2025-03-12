@@ -1,86 +1,76 @@
 /datum/advclass/mercenary/skeleton
 	title = "Undead Mercenary"
+	tutorial = "Even in death, you still serve! You retain fragments of your former life, but your memory withers with every waking moment.\
+	You may have lived for eons, you may be freshly revived. However old you are, your connection to your former master has been severed, and you have been cursed to wander the plane of the living in this decrepit, decaying body."
 	flag = MERCENARIES
 	department_flag = MERCENARIES
+	allowed_races = /datum/species/skeleton
+	category_tags = list(CTAG_MERCENARY)
+	outfit = /datum/outfit/job/roguetown/skeleton
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4
-	min_pq = null //no pq
+	min_pq = 10
 	max_pq = null
-
-	tutorial = "Even in death, you still serve! You retain fragments of your former life, but your memory withers with every waking moment.\
-	You may have lived for eons, you may be freshly revived. However old you are, your connection to your former master has been severed, and you have been cursed to wander the plane of the living in this decrepit, decaying body.\"
-
-	outfit = /datum/outfit/job/roguetown/skeleton
+	cmode_music = 'sound/music/combat_weird.ogg'
 	show_in_credits = FALSE
 	give_bank_account = FALSE
 
-	cmode_music = 'sound/music/combat_weird.ogg'
-
-/datum/job/roguetown/skeleton/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/outfit/job/roguetown/mercenary/skeleton/pre_equip(mob/living/carbon/human/H)
 	..()
-	if(L)
-		var/mob/living/carbon/human/H = L
-		L.can_do_sex = FALSE
-		if(M.mind)
-			M.mind.special_role = "skeleton"
-			M.mind.assigned_role = "skeleton"
-			M.mind.current.job = null
-		if(H.dna && H.dna.species)
-			H.dna.species.species_traits |= NOBLOOD
-			H.dna.species.soundpack_m = new /datum/voicepack/skeleton()
-			H.dna.species.soundpack_f = new /datum/voicepack/skeleton()
-		var/obj/item/bodypart/O = H.get_bodypart(BODY_ZONE_R_ARM)
-		if(O)
-			O.drop_limb()
-			qdel(O)
-		O = H.get_bodypart(BODY_ZONE_L_ARM)
-		if(O)
-			O.drop_limb()
-			qdel(O)
-		H.regenerate_limb(BODY_ZONE_R_ARM)
-		H.regenerate_limb(BODY_ZONE_L_ARM)
-		H.remove_all_languages()
-		H.base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB, /datum/intent/simple/claw)
-		H.update_a_intents()
-		H.ambushable = FALSE
-		if(H.charflaw)
-			QDEL_NULL(H.charflaw)
-		H.mob_biotypes = MOB_UNDEAD
-		H.faction = list("undead")
-		H.name = "skelelon"
-		H.real_name = "skelelon"
-		ADD_TRAIT(H, TRAIT_NOMOOD, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_NOROGSTAM, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_NOLIMBDISABLE, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_NOHUNGER, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_NOBREATH, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_NOPAIN, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_TOXIMMUNE, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_NOSLEEP, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, TRAIT_GENERIC)
-		for(var/obj/item/bodypart/B in H.bodyparts)
-			B.skeletonize(FALSE)
-		H.update_body()
 
-/datum/outfit/job/roguetown/skeleton/pre_equip(mob/living/carbon/human/H)
-	..()
-		wrists = /obj/item/clothing/wrists/roguetown/bracers
-	belt = /obj/item/storage/belt/rogue/leather
-		armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-	if(prob(10))
-		head = /obj/item/clothing/head/roguetown/helmet
-	if(prob(10))
-		head = /obj/item/clothing/head/roguetown/helmet/skullcap
-	if(prob(10))
-		head = /obj/item/clothing/head/roguetown/helmet/horned
-	if(prob(10))
-		head = /obj/item/clothing/head/roguetown/helmet/kettle
-	if(prob(50))
-		hand_r = /obj/item/rogueweapon/spear
-		H.STASTR = 8
-	else
-		H.STASTR = 10
-	H.STASPD = rand(7,10)
-	H.STAINT = 1
-	H.STACON = 3
+	H.adjust_blindness(-3)
+	var/classes = list("Gunner","Spearman")
+	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
+
+	switch(classchoice)
+		if("Gunner")
+			H.set_blindness(0)
+			to_chat(H, span_warning("Ackackackack!"))
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/climbing, 2, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/sneaking, 3, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 1, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/craft/crafting, 3 , TRUE) //builders
+			H.mind.adjust_skillrank_up_to(/datum/skill/craft/masonry, 3, TRUE) // builders
+			H.mind.adjust_skillrank_up_to(/datum/skill/craft/carpentry, 3, TRUE) //builders
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 1, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/tracking, 3, TRUE) //Hearthstone change.
+			H.mind.adjust_skillrank_up_to(/datum/skill/combat/firearms, 4, TRUE)
+			H.change_stat("strength", 2)
+			H.change_stat("endurance", 1)
+			H.change_stat("constitution", 2)
+			H.change_stat("perception", 3) 
+			H.change_stat("speed", 2)
+			r_hand = /obj/item/gun/ballistic/firearm/arquebus
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+			backr = /obj/item/ammo_holder/bullet
+			backl = /obj/item/storage/backpack/rogue/satchel/
+			backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/powderflask, /obj/item/ammo_casing/caseless/lead, /obj/item/ammo_casing/caseless/lead, /obj/item/ammo_casing/caseless/lead)
+
+		if("Spearman")
+			H.set_blindness(0)
+			to_chat(H, span_warning("Ackackackack!"))
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/climbing, 2, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 1, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank_up_to(/datum/skill/misc/tracking, 1, TRUE) //Hearthstone change.
+			H.change_stat("strength", 2)
+			H.change_stat("endurance", 2)
+			H.change_stat("constitution", 1)
+			H.change_stat("perception", 1)
+			r_hand = /obj/item/rogueweapon/spear/billhook
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+			back = /obj/item/storage/bag
+			backpack_contents = list(/obj/item/roguekey/mercenary)
+
+
+
+
+			wrists = /obj/item/clothing/wrists/roguetown/bracers
+			belt = /obj/item/storage/belt/rogue/leather
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+			head = /obj/item/clothing/head/roguetown/helmet/kettle
+			pants = /obj/item/clothing/under/
