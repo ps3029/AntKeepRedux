@@ -3,8 +3,8 @@
 	tutorial = "Even in death, you still serve! You retain fragments of your former life, but your memory withers with every waking moment.\
 	You may have lived for eons, you may be freshly revived. However old you are, your connection to your former master has been severed, and you have been cursed to wander the plane of the living in this decrepit, decaying body."
 	allowed_races = /datum/species/skeleton
-	category_tags = list(CTAG_MERCENARY)
 	outfit = /datum/outfit/job/roguetown/skeleton
+	category_tags = list(CTAG_MERCENARY)
 	maximum_possible_slots = 6
 	cmode_music = 'sound/music/combat_weird.ogg'
 
@@ -58,6 +58,7 @@
 			r_hand = /obj/item/rogueweapon/spear/billhook
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backl = /obj/item/storage/backpack/rogue/satchel/
+			head = /obj/item/clothing/head/roguetown/helmet/kettle
 			backpack_contents = list(/obj/item/roguekey/mercenary)
 
 		if("Standard Bearer")
@@ -84,5 +85,4 @@
 			wrists = /obj/item/clothing/wrists/roguetown/bracers
 			belt = /obj/item/storage/belt/rogue/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-			head = /obj/item/clothing/head/roguetown/helmet/kettle
 			pants = /obj/item/clothing/under/
