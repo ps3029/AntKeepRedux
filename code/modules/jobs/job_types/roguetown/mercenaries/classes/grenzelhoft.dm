@@ -18,7 +18,7 @@
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
-		if("Frontiersman")
+		if("Frontiersman Gunner")
 			H.set_blindness(0)
 			to_chat(H, span_warning("A trained gunner from the Grenzer's untamed frontier, you would be expected to have cut your teeth in guerilla warfare. There once was a time where nothing lay between you and the southern heathens but an arquebus and a cartridge bag. But as the fighting comes to a close, it's time to take those marksmanship skills somewhere they're needed more."))
 			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)
@@ -44,7 +44,7 @@
 			
 			
 
-		if("Landsturm")
+		if("Landsturm Pikeman")
 			H.set_blindness(0)
 			to_chat(H, span_warning("A professional pikebearer. You once fought in close order with your polearm-wielding brethren, but a particularly disastrous push-of-pike saw decimated your ranks. It's time to rally your scattered breathren and form a new order in the image of your old company."))
 			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)
