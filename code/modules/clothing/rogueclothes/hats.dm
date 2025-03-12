@@ -1574,8 +1574,8 @@
 	icon_state = "physhat"
 
 /obj/item/clothing/head/roguetown/grenzelhofthat
-	name = "grenzelhoft plume hat"
-	desc = "Slaying monsters or fair maidens: Grenzelhoft stands."
+	name = "plumed hat"
+	desc = "The immortal dome-topper of the inexorable pikebearer and free-shooters alike."
 	icon_state = "grenzelhat"
 	item_state = "grenzelhat"
 	icon = 'icons/roguetown/clothing/head.dmi'
