@@ -41,12 +41,10 @@
 			backr = /obj/item/ammo_holder/bullet
 			backl = /obj/item/storage/backpack/rogue/satchel/
 			backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/powderflask, /obj/item/ammo_casing/caseless/lead, /obj/item/ammo_casing/caseless/lead, /obj/item/ammo_casing/caseless/lead)
-			
-			
 
 		if("Landsturm Pikeman")
 			H.set_blindness(0)
-			to_chat(H, span_warning("A professional pikebearer. You once fought in close order with your polearm-wielding brethren, but a particularly disastrous push-of-pike saw decimated your ranks. It's time to rally your scattered breathren and form a new order in the image of your old company."))
+			to_chat(H, span_warning("A professional pikebearer. You once fought in close order with your polearm-wielding brethren, but a particularly disastrous push-of-the-pike decimated your ranks. It's time to rally your scattered breathren and form a new order in the image of your old company."))
 			H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 2, TRUE)
 			H.mind.adjust_skillrank_up_to(/datum/skill/misc/climbing, 2, TRUE)
 			H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
