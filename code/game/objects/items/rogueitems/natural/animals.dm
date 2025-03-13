@@ -3,7 +3,7 @@
 /obj/item/natural/hide
 	name = "hide"
 	icon_state = "hide"
-	desc = "Hide from one of Dendor's creachers."
+	desc = "Hide from one of Psydon's creachers."
 	force = 0
 	throwforce = 0
 	w_class = WEIGHT_CLASS_SMALL
@@ -14,7 +14,7 @@
 /obj/item/natural/fur
 	name = "fur"
 	icon_state = "wool1"
-	desc = "Fur from one of Dendor's creachers."
+	desc = "Fur from one of Psydon's creachers."
 	force = 0
 	throwforce = 0
 	w_class = WEIGHT_CLASS_SMALL
@@ -107,10 +107,11 @@
 	icon2 = "leatherroll2"
 	icon2step = 10
 
+//what actually is essence
 /obj/item/natural/cured/essence
 	name = "essense of wilderness"
 	icon_state = "wessence"
-	desc = "A mystical essense embued with the power of Dendor. Merely holding it transports one's mind to ancient times."
+	desc = "A mystical essense embued with the power of Psydon. Merely holding it transports one's mind to ancient times."
 	resistance_flags = FLAMMABLE
 	w_class = WEIGHT_CLASS_SMALL
 	sellprice = 20
