@@ -70,7 +70,7 @@
 /obj/item/quiver/attackby(obj/A, loc, params)
 	if(A.type in subtypesof(/obj/item/ammo_casing/caseless/rogue))
 		if(A.type in subtypesof(/obj/item/ammo_casing/caseless/rogue/javelin))
-			to_chat(loc, span_warning("Javelins are too big to fit in a quiver, silly!"))
+			to_chat(loc, span_warning("Javelins are too big for quivers, m'lord."))
 			return FALSE
 		else if(arrows.len < max_storage)
 			if(ismob(loc))
@@ -234,7 +234,7 @@
 
 /obj/item/quiver/sling
 	name = "sling bullet pouch"
-	desc = "This pouch holds the ouch." //i came up with this line on an impulse
+	desc = "A ponderable pebble-purse"
 	icon = 'icons/roguetown/weapons/ammo.dmi'
 	icon_state = "slingpouch"
 	item_state = "slingpouch"

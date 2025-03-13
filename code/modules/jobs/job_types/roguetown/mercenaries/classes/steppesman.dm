@@ -69,6 +69,8 @@
 			H.change_stat("endurance", 2)
 			H.change_stat("speed", 2)
 			ADD_TRAIT(H, TRAIT_PERFECT_TRACKER, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_JUSTICARSIGHT, TRAIT_GENERIC)
+			
 
 			
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor

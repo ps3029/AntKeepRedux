@@ -12,7 +12,7 @@
 
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR, NO_ORGAN_FEATURES, NOBLOOD)
-	inherent_traits = list(TRAIT_EASYDISMEMBER, TRAIT_NOHUNGER, TRAIT_LIMBATTACHMENT, TRAIT_NOPAIN, TRAIT_NOBREATH, TRAIT_TOXIMMUNE)
+	inherent_traits = list(TRAIT_EASYDISMEMBER, TRAIT_CRITICAL_WEAKNESS, TRAIT_NOHUNGER, TRAIT_LIMBATTACHMENT, TRAIT_NOPAIN, TRAIT_NOBREATH, TRAIT_TOXIMMUNE)
 	default_features = list(MANDATORY_FEATURE_LIST)
 	use_skintones = 1
 	max_age = 2000
@@ -21,6 +21,7 @@
 	possible_ages = ALL_AGES_LIST
 	disliked_food = NONE
 	liked_food = NONE
+
 	
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/msk.dmi'
@@ -74,3 +75,6 @@
 		"Mossy" = SKIN_COLOUR_MOSSY,
 		"Rosy" = SKIN_COLOUR_ROSY,
 )
+
+/mob/living/carbon/human/species/skeleton/after_creation()
+	can_do_sex = FALSE
