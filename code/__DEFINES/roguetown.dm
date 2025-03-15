@@ -5,54 +5,29 @@
 	/datum/species/human/halfelf,\
 	/datum/species/elf/dark,\
 	/datum/species/elf/wood,\
-	/datum/species/dwarf/mountain,\
-	/datum/species/tieberian,\
-	/datum/species/aasimar,\
-	/datum/species/lizardfolk,\
-	/datum/species/lupian,\
-	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
-	/datum/species/akula,\
-	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
-	/datum/species/halforc,\
-	/datum/species/kobold,\
-	/datum/species/goblinp\
 )
 
 #define RACES_RESPECTED list(\
 	/datum/species/human/northern,\
 	/datum/species/elf/wood,\
 	/datum/species/human/halfelf,\
-	/datum/species/dwarf/mountain,\
-	/datum/species/aasimar,\
-	/datum/species/lupian,\
-	/datum/species/vulpkanin,\
-	/datum/species/moth,\
-	/datum/species/dracon\
 )
 
 #define RACES_TOLERATED list(\
 	/datum/species/elf/dark,\
-	/datum/species/tieberian,\
 	/datum/species/lizardfolk,\
-	/datum/species/tabaxi,\
-	/datum/species/akula,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman\
 )
 
 #define RACES_SHUNNED list(\
-	/datum/species/halforc,\
 	/datum/species/anthromorphsmall,\
-	/datum/species/kobold\
 )
 
-#define RACES_DESPISED \
-	/datum/species/goblinp\
+// #define RACES_DESPISED
 
 #define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
 
@@ -65,21 +40,9 @@
 	/datum/species/human/halfelf,\
 	/datum/species/elf/dark,\
 	/datum/species/elf/wood,\
-	/datum/species/dwarf/mountain,\
-	/datum/species/tieberian,\
-	/datum/species/aasimar,\
-	/datum/species/lizardfolk,\
-	/datum/species/lupian,\
-	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
-	/datum/species/akula,\
-	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
-	/datum/species/kobold,\
-	/datum/species/goblinp\
 )
 
 #define CLOTHED_RACES_TYPES list(\
@@ -88,22 +51,9 @@
 	/datum/species/human/halfelf,\
 	/datum/species/elf/dark,\
 	/datum/species/elf/wood,\
-	/datum/species/dwarf/mountain,\
-	/datum/species/tieberian,\
-	/datum/species/aasimar,\
-	/datum/species/lizardfolk,\
-	/datum/species/lupian,\
-	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
-	/datum/species/akula,\
-	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
-	/datum/species/halforc,\
-	/datum/species/kobold,\
-	/datum/species/goblinp\
 )
 
 // Non-dwarf non-kobold non-goblin mostly
@@ -112,32 +62,13 @@
 	/datum/species/human/halfelf,\
 	/datum/species/elf/dark,\
 	/datum/species/elf/wood,\
-	/datum/species/tieberian,\
-	/datum/species/aasimar,\
-	/datum/species/lizardfolk,\
-	/datum/species/lupian,\
-	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
-	/datum/species/akula,\
-	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
-	/datum/species/halforc\
 )
 
 // Non-elf non-dwarf non-kobold non-goblin mostly
 #define HUMANLIKE_RACE_TYPES list(\
 	/datum/species/human/northern,\
-	/datum/species/tieberian,\
-	/datum/species/aasimar,\
-	/datum/species/lizardfolk,\
-	/datum/species/lupian,\
-	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
-	/datum/species/akula,\
-	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman\
 )

@@ -11,14 +11,10 @@
 	. = ..()
 	var/species = list(
 		/datum/species/human/northern,
-		/datum/species/dwarf/mountain,
 		/datum/species/elf/dark,
 		/datum/species/elf/wood,
-		/datum/species/goblinp,
-		/datum/species/aasimar,
 		/datum/species/human/halfelf,
 		/datum/species/halforc,
-		/datum/species/tieberian,
 	)
 
 	set_species(pick(species))

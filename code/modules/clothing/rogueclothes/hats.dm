@@ -467,11 +467,11 @@
 	desc = "You shouldn't be seeing this."
 	icon_state = "serpcrown"
 
+
 /obj/item/clothing/head/roguetown/crown/surplus
 	name = "crown"
 	icon_state = "serpcrowno"
 	sellprice = 100
-	allowed_race = list(/datum/species/goblinp)
 
 /obj/item/clothing/head/roguetown/crown/sparrowcrown
 	name = "champion's circlet"
