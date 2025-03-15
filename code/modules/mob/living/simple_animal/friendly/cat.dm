@@ -253,7 +253,7 @@
 
 
 
-
+/*
 /mob/living/simple_animal/pet/cat/rogue/attack_hand(mob/living/carbon/human/M)
 	. = ..()
 	if( (isdarkelf(M)) ) // l´cursed bonbonbon
@@ -264,7 +264,7 @@
 				wuv(1, M)
 			if(INTENT_HARM)
 				wuv(-1, M)
-
+*/
 
 /mob/living/simple_animal/pet/cat/proc/wuv(change, mob/M)
 	if(change)
@@ -279,6 +279,7 @@
 			if(M && stat != DEAD)
 				emote("me", 1, "hisses!")
 
+/*
 /mob/living/simple_animal/pet/cat/inn/attack_hand(mob/living/carbon/human/M) // Gato Basado - not all pets are welcome
 	. = ..()
 	if((isdarkelf(M)))  // l´cursed bonbonbon
@@ -290,7 +291,7 @@
 		dir = pick(GLOB.alldirs)
 		step(src, dir)
 		personal_space()
-
+	
 	if(M.mind && M.mind.has_antag_datum(/datum/antagonist/vampirelord))
 		visible_message("<span class='notice'>The cat hisses at [M] and recoils in disgust.</span>")
 		icon_state = "[icon_living]"
@@ -300,3 +301,4 @@
 		dir = pick(GLOB.alldirs)
 		step(src, dir)
 		personal_space()
+*/

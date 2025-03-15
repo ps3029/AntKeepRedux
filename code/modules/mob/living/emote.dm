@@ -858,6 +858,13 @@
 	only_forced_audio = TRUE
 	show_runechat = FALSE
 
+/datum/emote/living/rbattlecry
+	key = "rbattlecry"
+	message = "shrieks FOR THE REPUBLIC! FOR L'EMPEREUR!"
+	emote_type = EMOTE_AUDIBLE
+	only_forced_audio = TRUE
+	show_runechat = TRUE
+
 /datum/emote/living/rage
 	key = "rage"
 	message = "screams in rage!"

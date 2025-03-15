@@ -152,9 +152,6 @@
 	/datum/patron/sects_psydonistismianism/sectarian\
 )
 
-
-#define ZIZO_ONLY list(/datum/patron/heathenry/zizo,)
-
 #define ALL_DIVINE_PATRONS_EXTENDED list(\
 	/datum/patron/sects_psydonistismianism/psydon,\
 	/datum/patron/sects_psydonistismianism/psydon_east,\
@@ -172,6 +169,15 @@
 	/datum/patron/heathenry/atheist,\
 	/datum/patron/heathenry/pagans\
 )
+
+#define ALL_REVOLUTIONARY_PATRONS list(\
+	/datum/patron/heathenry/atheist,\
+	/datum/patron/sects_psydonistismianism/sovereign,\
+	/datum/patron/psydon_heresy/fredonian,\
+	/datum/patron/psydon_heresy/simonism,\
+	/datum/patron/sects_psydonistismianism/conciliarism,\
+)
+
 
 #define TEN_CURSES list(\
 	/datum/curse/psydon,\

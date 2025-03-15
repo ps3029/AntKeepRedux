@@ -85,9 +85,9 @@
 
 /datum/species/human/northern/get_skin_list()
 	return list(
-		"Kasan" = SKIN_COLOR_GRENZELHOFT,
-		"Zimicjugite" = SKIN_COLOR_HAMMERHOLD,
-		"Avar" = SKIN_COLOR_AVAR,
+		"Zimicjugite" = SKIN_COLOR_GRENZELHOFT,
+		"Kasan" = SKIN_COLOR_HAMMERHOLD,
+		"Grenzer" = SKIN_COLOR_AVAR,
 		"Rockhill" = SKIN_COLOR_ROCKHILL,
 		"Otava" = SKIN_COLOR_OTAVA,
 		"Etrusca" = SKIN_COLOR_ETRUSCA,

@@ -4,7 +4,7 @@
 	You may have lived for eons, you may be freshly revived. However old you are, your connection to your former master has been severed, and you have been cursed to wander the plane of the living in this decrepit, decaying body."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = /datum/species/skeleton
-	outfit = /datum/outfit/job/roguetown/skeleton
+	outfit = /datum/outfit/job/roguetown/bandit/skeleton
 	category_tags = list(CTAG_BANDIT)
 	cmode_music = 'sound/music/combat_weird.ogg'
 

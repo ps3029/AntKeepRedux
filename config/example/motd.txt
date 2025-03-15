@@ -1,4 +1,0 @@
-<!-- Most valid html will work in here, excluding images. -->
-
-<center>* Testing server! YEEEY! *</center>
-If you're in here, you're either in the right place or something has gone terribly wrong.

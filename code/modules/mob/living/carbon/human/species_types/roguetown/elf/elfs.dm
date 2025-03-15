@@ -2,7 +2,7 @@
 	race = /datum/species/elf/wood
 
 /datum/species/elf/wood
-	name = "Elf"
+	name = "Burgundise"
 	id = "elfw"
 	desc = "<b>Elf</b><br>\
 	\"Elf\" is a catch-all term used for tall, pointy-eared humanoids who can trace \

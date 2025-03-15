@@ -1,6 +1,6 @@
 /mob/living/carbon/human/species/skeleton/
 	race = /datum/species/skeleton
-	
+
 /datum/species/skeleton
 	name = "Skeleton"
 	id = "skeleton_playable"

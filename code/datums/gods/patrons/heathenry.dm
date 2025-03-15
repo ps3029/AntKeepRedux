@@ -35,6 +35,7 @@
 		"DEATH TO THE KING! YOUR GODS ARE NOT SACRED!",
 		"I AM THE RULER OF MY OWN DESTINY! NO BIBLICAL TOME SHALL CONTAIN MY FERVOUR!",
 	)
+	mob_traits = list(TRAIT_COMMIE)
 
 /datum/patron/heathenry/pagans
 	name = "Foreign gods"
